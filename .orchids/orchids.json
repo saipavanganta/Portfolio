@@ -1,0 +1,7 @@
+{
+  "startupCommands": [
+    "cd /home/user/app/portfolio && npm install; npm run dev"
+  ],
+  "projectId": "f8030eb0-7de6-4893-b419-39ed9b7325da",
+  "templateId": "any"
+}
