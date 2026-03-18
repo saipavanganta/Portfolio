@@ -108,7 +108,8 @@ export default function Hero() {
                 <img
                   src={personal.photo}
                   alt={personal.name}
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: "center 20%" }}
                 />
               </div>
               {/* Floating badge */}
