@@ -61,6 +61,9 @@ export default function Hero() {
               <a href={personal.github} target="_blank" rel="noreferrer" className="btn-outline">
                 <Github size={16} /> View GitHub
               </a>
+             <a href="/Ganta_Sai_Pavan_CV.pdf" download className="btn-outline">
+  📄 Download CV
+</a>
             </div>
 
             {/* Social Links */}
