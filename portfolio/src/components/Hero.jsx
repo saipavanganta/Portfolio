@@ -111,13 +111,8 @@ export default function Hero() {
   <img
   src={personal.photo}
   alt={personal.name}
-  className="w-full h-full object-cover transition-transform duration-500"
-  style={{ 
-    // Scale 1.2 zooms in by 20%
-    // translateY moves you down (adjust 5% to 10% if needed)
-    transform: "scale(1.2) translateY(5%)",
-    objectPosition: "center" 
-  }}
+  // Added scale-125 (zoom) and translate-y-4 (move down)
+  className="w-full h-full object-cover scale-125 translate-y-4"
 />
     
 </div>
