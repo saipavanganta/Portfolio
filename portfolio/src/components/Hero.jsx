@@ -107,13 +107,15 @@ export default function Hero() {
               {/* Ring */}
               <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary-500 via-primary-400 to-accent-400 opacity-60" />
               {/* Photo */}
-              <div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-full overflow-hidden border-4 border-dark-950">
-                <img
-                  src={personal.photo}
-                  alt={personal.name}
-                  className="w-full h-full object-cover"
-                  style={{ objectPosition: "50% 25%" }}
-                />
+             <div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-full overflow-hidden border-4 border-dark-950">
+  <img
+    src={personal.photo}
+    alt={personal.name}
+    className="w-full h-full object-cover"
+    
+    style={{ objectPosition: "center 15%" }} 
+  />
+</div>
               </div>
               {/* Floating badge */}
               <div className="absolute -bottom-2 -right-2 bg-dark-800 border border-dark-700 rounded-2xl px-3 py-2 flex items-center gap-2 shadow-xl">
