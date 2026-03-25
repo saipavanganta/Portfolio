@@ -109,12 +109,17 @@ export default function Hero() {
               {/* Photo */}
              <div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-full overflow-hidden border-4 border-dark-950">
   <img
-    src={personal.photo}
-    alt={personal.name}
-    className="w-full h-full object-cover"
+  src={personal.photo}
+  alt={personal.name}
+  className="w-full h-full object-cover transition-transform duration-500"
+  style={{ 
+    // Scale 1.2 zooms in by 20%
+    // translateY moves you down (adjust 5% to 10% if needed)
+    transform: "scale(1.2) translateY(5%)",
+    objectPosition: "center" 
+  }}
+/>
     
-    style={{ objectPosition: "center 15%" }} 
-  />
 </div>
               </div>
               {/* Floating badge */}
