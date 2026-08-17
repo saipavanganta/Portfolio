@@ -2,10 +2,10 @@ import { MapPin, Mail, Phone, GraduationCap, Code2, Zap, Target } from "lucide-r
 import { personal } from "../data/portfolio";
 
 const stats = [
-  { label: "Projects Built",  value: "2+",   icon: Code2         },
+  { label: "Featured Projects", value: "2", icon: Code2 },
   { label: "Certificates",    value: "4",    icon: GraduationCap },
-  { label: "Hackathon",       value: "1",    icon: Target        },
-  { label: "CGPA",            value: "6.92", icon: Zap           },
+  { label: "Achievements", value: "2", icon: Target },
+  { label: "CGPA", value: "7.21", icon: Zap },
 ];
 
 const highlights = [
@@ -22,8 +22,8 @@ export default function About() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-primary-400 font-mono text-sm tracking-widest uppercase mb-3">Who I Am</p>
-          <h2 className="section-title">About Me</h2>
-          <p className="section-subtitle">A passionate developer with a drive for continuous learning</p>
+          <h2 className="section-title">A little about me.</h2>
+          <p className="section-subtitle">A developer who enjoys turning ideas into useful, well-considered products.</p>
         </div>
 
         {/* Stats */}

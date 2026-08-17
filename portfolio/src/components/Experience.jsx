@@ -27,7 +27,7 @@ export default function Experience() {
                 <div key={t.id} className="card card-hover p-6 relative overflow-hidden group">
                   <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-primary-500 to-primary-700 rounded-l-2xl" />
                   <div className="flex items-start gap-4 pl-2">
-                    <div className="text-3xl flex-shrink-0">{t.icon}</div>
+                    <div className="w-10 h-10 rounded-xl bg-primary-500/10 border border-primary-500/20 flex items-center justify-center text-primary-300 flex-shrink-0"><BookOpen size={18} /></div>
                     <div className="flex-1">
                       <div className="flex items-start justify-between gap-2 mb-1">
                         <h4 className="font-semibold text-white text-sm group-hover:text-primary-300 transition-colors">
@@ -72,7 +72,7 @@ export default function Experience() {
                 <div key={a.id} className="card card-hover p-6 relative overflow-hidden group">
                   <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-yellow-500 to-orange-500 rounded-l-2xl" />
                   <div className="flex items-start gap-4 pl-2">
-                    <div className="text-3xl flex-shrink-0">{a.icon}</div>
+                    <div className="w-10 h-10 rounded-xl bg-yellow-500/10 border border-yellow-500/20 flex items-center justify-center text-yellow-300 flex-shrink-0"><Trophy size={18} /></div>
                     <div className="flex-1">
                       <div className="flex items-start justify-between gap-2 mb-1">
                         <h4 className="font-semibold text-white text-sm group-hover:text-yellow-300 transition-colors">
@@ -94,13 +94,6 @@ export default function Experience() {
                 </div>
               ))}
 
-              {/* Placeholder future */}
-              <div className="card p-6 border-dashed opacity-50">
-                <div className="flex items-center justify-center gap-3 text-dark-500">
-                  <Trophy size={16} />
-                  <span className="text-sm italic">More achievements coming soon...</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>

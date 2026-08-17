@@ -20,7 +20,7 @@ export default function Education() {
           <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-primary-500 via-primary-700 to-dark-700 hidden sm:block" />
 
           <div className="space-y-8">
-            {education.map((edu, i) => (
+            {education.map((edu) => (
               <div key={edu.id} className="relative flex gap-6 group">
                 {/* Dot */}
                 <div className="flex-shrink-0 relative z-10 hidden sm:flex">
@@ -31,7 +31,7 @@ export default function Education() {
                         : "border-dark-600 bg-dark-800 group-hover:border-primary-500/50"
                     }`}
                   >
-                    {edu.icon}
+                    <GraduationCap size={20} className="text-primary-300" />
                   </div>
                   {edu.type === "current" && (
                     <div className="absolute -top-0.5 -right-0.5 w-3 h-3 rounded-full bg-accent-400 border-2 border-dark-950 animate-pulse" />

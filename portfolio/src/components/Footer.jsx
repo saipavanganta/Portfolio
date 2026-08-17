@@ -1,3 +1,4 @@
+import { createElement } from "react";
 import { Github, Linkedin, Mail, Heart, Code2, ArrowUp } from "lucide-react";
 import { personal, navItems } from "../data/portfolio";
 
@@ -26,7 +27,7 @@ export default function Footer() {
                 { icon: Github,   href: personal.github   },
                 { icon: Linkedin, href: personal.linkedin },
                 { icon: Mail,     href: `mailto:${personal.email}` },
-              ].map(({ icon: Icon, href }) => (
+              ].map(({ icon, href }) => (
                 <a
                   key={href}
                   href={href}
@@ -34,7 +35,7 @@ export default function Footer() {
                   rel="noreferrer"
                   className="w-8 h-8 rounded-lg bg-dark-800 border border-dark-700 hover:border-primary-500/40 hover:bg-primary-500/10 flex items-center justify-center text-dark-500 hover:text-primary-400 transition-all"
                 >
-                  <Icon size={14} />
+                  {createElement(icon, { size: 14 })}
                 </a>
               ))}
             </div>

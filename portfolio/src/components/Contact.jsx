@@ -42,7 +42,7 @@ const socialLinks = [
   {
     icon: Github,
     label: "GitHub",
-    handle: "saipavanganta",
+    handle: "saipavanganta21",
     href: personal.github,
     color: "hover:border-white/20 hover:bg-white/5 hover:text-white",
   },

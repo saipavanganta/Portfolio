@@ -1,7 +1,5 @@
-import { Github, Linkedin, Mail, Phone, ArrowDown, Download, Sparkles } from "lucide-react";
+import { Github, Mail, ArrowDown, Download } from "lucide-react";
 import { personal } from "../data/portfolio";
-
-const roles = ["Full Stack Developer", "React Developer", "Problem Solver", "CS Engineering Student"];
 
 export default function Hero() {
   return (
@@ -29,13 +27,10 @@ export default function Hero() {
           {/* Text */}
           <div className="flex-1 text-center lg:text-left animate-fade-in">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-500/10 border border-primary-500/20 text-primary-400 text-sm font-medium mb-6">
-              <Sparkles size={14} className="animate-pulse" />
-              Open to Opportunities 
-            </div>
+            <div className="inline-flex items-center gap-2 text-primary-300 text-xs font-mono tracking-[.16em] uppercase mb-6"><span className="w-1.5 h-1.5 rounded-full bg-accent-400" /> Available for opportunities</div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] mb-4">
-              Hi, I'm{" "}
+              Hello, I’m{" "}
               <span className="gradient-text block mt-1">
                 {personal.name.split(" ").slice(1).join(" ")}
               </span>
@@ -61,9 +56,7 @@ export default function Hero() {
               <a href={personal.github} target="_blank" rel="noreferrer" className="btn-outline">
                 <Github size={16} /> View GitHub
               </a>
-             <a href="/Ganta_Sai_Pavan_CV.pdf" download className="btn-outline">
-  📄 Download CV
-</a>
+              <a href="/Ganta_Sai_Pavan_CV.pdf" download className="btn-outline"><Download size={16} /> Download CV</a>
             </div>
 
             {/* Social Links */}
@@ -116,7 +109,6 @@ export default function Hero() {
 />
     
 </div>
-              </div>
               {/* Floating badge */}
               <div className="absolute -bottom-2 -right-2 bg-dark-800 border border-dark-700 rounded-2xl px-3 py-2 flex items-center gap-2 shadow-xl">
                 <div className="w-2 h-2 rounded-full bg-accent-400 animate-pulse" />
